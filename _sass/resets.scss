@@ -1,0 +1,41 @@
+// SITE RESETS OF MINIMA STYLES
+// ----------------------------
+
+.page-content {
+  padding-top: 0;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.post-header {
+  margin-top: $spacing-unit;
+}
+
+.site-nav {
+  z-index: 1000;
+} 
+
+// TYPOGRAPHY RESETS OF MINIMA STYLES
+// ----------------------------------
+
+.m-body,
+ul,
+.site-title {
+  font-family: $secondary-font-family;
+  font-weight: 300;
+}
+
+.site-title {
+  font-size: 34px;
+  text-transform: uppercase;
+
+  @include media-query($on-palm) {
+    font-size: 28px;
+  }
+
+  @include media-query($on-laptop) {
+    font-size: 26px;
+  }
+}

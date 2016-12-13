@@ -1,0 +1,24 @@
+// NAV STYLES
+// ----------
+
+.m-nav {
+  display: flex;
+  flex-direction: row;
+
+  @include media-query($on-laptop) {
+    font-size: 13px;
+  }
+
+  @include media-query($on-palm) {
+    display: block;
+  }
+}
+
+.m-nav--link {
+  text-transform: uppercase;
+  padding-right: 15px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
