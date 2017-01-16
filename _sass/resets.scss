@@ -10,12 +10,17 @@
 }
 
 .post-header {
-  margin-top: $spacing-unit;
+  margin-top: 0;
 }
 
 .site-nav {
   z-index: 1000;
-} 
+}
+
+.post-title {
+  display: none;
+}
+
 
 // TYPOGRAPHY RESETS OF MINIMA STYLES
 // ----------------------------------
@@ -37,5 +42,23 @@ ul,
 
   @include media-query($on-laptop) {
     font-size: 26px;
+  }
+}
+
+// MOBILE FIRST MEDIA QUERIES
+// --------------------------
+
+$tablet-width: 600px;
+$desktop-width: 900px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
   }
 }

@@ -1,41 +1,64 @@
-.m-headshot {
-  background-image: url('../images/smith-bw-small.png');
-  height: 600px;
-  width: 380px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  background-size: contain;
+.l-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-  @include media-query($on-laptop) {
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.m-headshot {
+  background-image: url('../images/smith-bw-headshot.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+
+  @include tablet {
+    background-image: url('../images/smith-bw-small.png');
     height: 500px;
     width: 320px;
-    left: $spacing-unit;
   }
 
-  @include media-query($on-palm) {
-    position: static;
-    margin-top: $spacing-unit;
-    height: 200px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+  @include desktop {
+    height: 600px;
+    width: 380px;
+  }
+}
+
+.m-headshot--container {
+  background: #dedede;
+  border-radius: 50%;
+  height: 200px;
+  margin: $spacing-unit auto;
+  overflow: hidden;
+  width: 200px;
+
+  @include tablet {
+    background: white;
+    border-radius: 0;
+    height: auto;
+    overflow: visable;
+    width: 100%;
+    margin: $spacing-unit $spacing-unit 0 0;
+    min-width: 320px;
+  }
+
+  @include desktop {
+    min-width: 380px;
   }
 }
 
 .m-body--home {
-  position: absolute;
-  left: 420px;
-  top: 200px;
   margin-right: $spacing-unit;
+  text-align: center;
   
-  @include media-query($on-laptop) {
-    left: 360px;
-    top: 150px;
+  @include tablet {
+    text-align: left;
   }
 
-  @include media-query($on-palm) {
-    position: static;
+  @include desktop {
+    font-size: 36px;
   }
 }

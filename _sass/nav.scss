@@ -2,21 +2,20 @@
 // ----------
 
 .m-nav {
-  display: flex;
-  flex-direction: row;
-
-  @include media-query($on-laptop) {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
     font-size: 13px;
   }
 
-  @include media-query($on-palm) {
-    display: block;
+  @include desktop {
+    font-size: 18px;
   }
 }
 
 .m-nav--link {
-  text-transform: uppercase;
   padding-right: 15px;
+  text-transform: uppercase;
 
   &:last-of-type {
     padding-right: 0;
