@@ -4,6 +4,16 @@ title: About
 permalink: /about/
 ---
 
+<h2 class="m-subhead">About</h2>
+<p class="m-body">Smith Schwartz is a former museum experience designer and digital nomad. She is a UX Engineer at Say Media, building the future of digital publishing for sites like Rachael Ray, Biography and Vice. Smith is a sought after speaker on front-end development and design, specifically on the topic of the CSS preprocessing language, Sass. She also runs the <a href="https://www.meetup.com/Lex-UX/">Lex UX</a> meetup group in Lexington, KY.</p>
+
+<h2 class="m-subhead">Board Memberships</h2>
+<ul>
+  <li><a href="https://www.wordset.org/en">Wordset</a> the world’s first open source, gender neutral dictionary</li> 
+  <li><a href="http://www.giveadayglobal.org/">Give a Day Global</a> connects international travelers with one day volunteers opportunities at nonprofits across the world</li>
+</ul>
+
+<!-- 
 <section class="l-panel">
   <h2 class="m-subhead">I studied Art + Design at Anderson Univerity and Visual Communication at The School of the Art Institute of Chicago.</h2>
   <p class="m-body">At those institutions, I learned a foundation of execution, delivery and craft that has laid the groundwork for my professional career.</p>
@@ -32,11 +42,5 @@ permalink: /about/
 <section class="l-panel">
   <h2 class="m-subhead">I moved on from museum work in 2011, in search of the boundless possibilities of the web.</h2>
   <p class="m-body">I started a consulting business and worked with companies like Intuitive Company, Fuzzy Math and Surprise Highway while traveling the globe as a digital nomad.</p>
-</section>
+</section> -->
 
-<section class="l-panel">
-  <h2 class="m-subhead">Advisory Board:</h2>
-  <p class="m-body">I serve on the advisory board for two start-ups:
-- Wordset- the world’s first open source, gender neutral dictionary
-- Give a Day Global- connects international travelers with one day     volunteers opportunities at nonprofits across the world</p>
-</section>

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Speaking
+title:
 permalink: /speaking/
 ---
 
-<h2 class="m-subhead">Public Speaking:</h2>
+<h2 class="m-subhead">Public Speaking</h2>
 <ul>
   <li>Front End Design Conf</li>
   <li>Sass Conf</li>
@@ -17,13 +17,13 @@ permalink: /speaking/
   <li>Pecha Kucha</li>
 </ul>
 
-<h2 class="m-subhead">Podcasts:</h2>
+<h2 class="m-subhead">Podcasts</h2>
 <ul>
   <li><a href="https://www.youtube.com/watch?v=NGvKoGZd3Ng">Sass Bites #66: Front-end Architecture</a></li>
   <li><a href="https://www.youtube.com/watch?v=NGvKoGZd3Ng">Sass Bites #52: The Road to Sass Conf</a></li>
 </ul>
 
-<h2 class="m-subhead">Workshops:</h2>
+<h2 class="m-subhead">Workshops</h2>
 <ul>
   <li>Speak up! Conference talk presenter training</li>
   <li>Design + Engineering JAMBOREE</li>

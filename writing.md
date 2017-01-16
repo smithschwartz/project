@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Selected Writing
 permalink: /writing/
 ---
+
+<h2 class="m-subhead">Selected writing</h2>
 <ul>
   <li><a href="http://www.saydaily.com/2014/09/css-at-say-media">CSS at Say Media</a></li>
   <li><a href="http://www.saydaily.com/2014/11/list-cards-for-tempest">Introducting List Cards for Tempest</a></li>
@@ -13,7 +14,7 @@ permalink: /writing/
   <li><a href="http://www.apartmenttherapy.com/authors/smith">Apartment Therapy Archives</a></li>
 </ul>
 
-<h2>Press</h2>
+<h2 class="m-subhead">Press</h2>
 
 <ul>
   <li><a href="http://www.saydaily.com/2014/09/saymedia-at-sassconf">Modern CMS Design in Action</a></li>
