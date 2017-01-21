@@ -1,0 +1,36 @@
+.m-gallery {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 0;
+  justify-content: space-between;
+
+  li {
+    //width: 400px;
+  }
+
+  img {
+    height: 400px;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+  }
+}
+
+.m-breadcrumb {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.m-portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.m-portfolio--image {
+  margin-right: 20px;
+}

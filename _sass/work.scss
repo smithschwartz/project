@@ -1,0 +1,59 @@
+.l-work {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.l-work--thumb {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @include tablet {
+    width: calc(50% - 20px);
+
+    &:nth-of-type(2n+1) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.m-ui-components {
+  background: hotpink;
+  color: white;
+}
+
+.m-visual-design {
+  background: deeppink;
+}
+
+.m-systems {
+  background: magenta;
+}
+
+.m-case-studies {
+  background: mediumvioletred;
+}
+
+.m-work--button {
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+
+  &:visited {
+    color: white;
+  }
+
+  @include tablet {
+    font-size: 26px
+  }
+
+  @include desktop {
+    font-size: 36px
+  }
+}
