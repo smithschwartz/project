@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: detail
 title: About
 permalink: /about/
 ---
 
 <h2 class="m-subhead">About</h2>
-<p class="m-body">Smith Schwartz is a former museum experience designer and digital nomad. She is a UX Engineer at Say Media, building the future of digital publishing for sites like Rachael Ray, Biography and Vice. Smith is a sought after speaker on front-end development and design, specifically on the topic of the CSS preprocessing language, Sass. She also runs the <a href="https://www.meetup.com/Lex-UX/">Lex UX</a> meetup group in Lexington, KY.</p>
+<p class="m-body">Smith Schwartz is a UX Engineer at Say Media, building the future of digital publishing for sites like Rachael Ray Magazine, Biography and Vice. Smith is a sought after speaker on front-end development and design, specifically on the topic of User Experience Design and the CSS preprocessing language, Sass. She runs the <a href="https://www.meetup.com/Lex-UX/">Lex UX</a> meetup group in Lexington, KY. Formerly, she was a museum experience designer and digital nomad.</p>
 
 <h2 class="m-subhead">Board Memberships</h2>
 <ul>

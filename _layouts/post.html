@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="m-bg-image" lang="en">
+<html lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -49,6 +49,18 @@
   </header>
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
+      <div class="PageNavigation">
+        {% if page.previous.url %}
+          <a class="prev" href="{{page.previous.url}}">&laquo; Previous Project</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">Next Project &raquo;</a>
+        {% endif %}
+      </div>
+
+      <h2>{{page.title}}</h2>
+      <img src="{{ page.image_path }}" alt="{{ page.title }}"/>
+
       {{ content }}
     </div>
   </main>
