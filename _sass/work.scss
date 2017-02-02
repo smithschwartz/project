@@ -1,59 +1,122 @@
-.l-work {
-  align-items: center;
+.m-body {
+  background: #fafafa;
+}
+
+.m-detail--container {
+  align-items: flex-start;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+ // padding-top: 50px;
+
+  @include tablet {
+  //  padding-top: 100px;
+    width: 90%;
+  }
 }
 
-.l-work--thumb {
-  align-items: center;
-  display: flex;
-  height: 400px;
-  justify-content: center;
+// .m-detail--content {
+//   width: 100%;
+//   height: 100%;
+// }
+
+.m-work--card {
+  background: white;
+  padding: 10px;
   margin-bottom: 20px;
+  text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
 
   @include tablet {
-    width: calc(50% - 20px);
-
-    &:nth-of-type(2n+1) {
-      margin-right: 20px;
-    }
-  }
-}
-
-.m-ui-components {
-  background: hotpink;
-  color: white;
-}
-
-.m-visual-design {
-  background: deeppink;
-}
-
-.m-systems {
-  background: magenta;
-}
-
-.m-case-studies {
-  background: mediumvioletred;
-}
-
-.m-work--button {
-  color: white;
-  font-size: 36px;
-  text-transform: uppercase;
-
-  &:visited {
-    color: white;
-  }
-
-  @include tablet {
-    font-size: 26px
+    flex-direction: row;
+    height: 220px;
   }
 
   @include desktop {
-    font-size: 36px
+    height: 250px;
   }
+}
+
+.m-work--details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: #333 !important;
+
+  @include tablet {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+.m-work--image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  @include tablet {
+    height: 200px;
+    width: 280px;
+  }
+
+  @include desktop {
+    height: 230px;
+    width: 400px;
+  }
+}
+.m-work--card-image {
+  margin-bottom: 20px;
+}
+
+h2.m-work--card-title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 24px;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.m-work--card-date {
+  font-size: 14px;
+  margin-bottom: 5px;
+
+  @include tablet {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.m-work--card-dek {
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.m-body--bg {
+  background: white;
 }

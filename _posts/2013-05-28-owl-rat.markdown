@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Owl Rat"
-date:   2017-01-27 17:32:43 -0400
+date:   2013-05-28
 categories: jekyll update
 image_path: /images/visual-design/owl-rat.jpg
+dek: blah blah blah
 ---
 
 Hello 1234

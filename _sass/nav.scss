@@ -28,5 +28,9 @@
 
 .site-header {
   z-index: 20;
-  background: white;
+  background: transparent;
+}
+
+.site-nav .page-link {
+  font-family: $base-font-family;
 }

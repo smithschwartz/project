@@ -2,39 +2,23 @@
 layout: detail
 title: Work
 permalink: /work/
-
-<!-- images:
-  - image_path: /images/visual-design/eudie-bday.jpg
-    title: Birthday Invite
-
-  - image_path: /images/visual-design/owl-rat.jpg
-    title: Owl Rat
-    link: /owl-rat
-
-  - image_path: /images/visual-design/GADG_invitation.jpg
-    title: Give A Day Global Fundraiser Invitation
-    link: /fundraiser-invite
-    
-  - image_path: /images/visual-design/newsletter-icon-toaster.png
-    title: Newsletter
-    link: /newsletter-icon
-
-  - image_path: /images/visual-design/sunset.jpg
-    title: Sunset
-    link: /sunset
-
-  - image_path: /images/visual-design/sunset.jpg
-    title: Sunset
-    link: /sunset -->
 ---
 
-<ul>
+<div class="m-work m-body">
+  <div class="m-detail--container">
   {% for post in site.posts %}
-    <li>
-      {{ post.title }}
+    <div class="m-work--card">
       <a href="{{ post.url }}">
-        <img src="{{ post.image_path }}" alt="{{ image.title}}"/>
+        <div class="m-work--image-container">
+          <img class="m-work--card-image" src="{{ post.image_path }}" alt="{{ image.title}}"/>
+        </div>
       </a>
-    </li>
+      <a class="m-work--details" href="{{ post.url }}">
+        <div class="m-work--card-date">{{ post.date | date_to_long_string }}</div>
+        <h2 class="m-work--card-title">{{ post.title }}</h2>
+        <div class="m-work--card-dek">{{ post.dek }}</div>
+      </a>
+    </div>
   {% endfor %}
-</ul>
+  </div>
+</div>

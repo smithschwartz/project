@@ -7,6 +7,8 @@
 
 .wrapper {
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .post-header {
@@ -15,10 +17,14 @@
 
 .site-nav {
   z-index: 1000;
+  
+  .menu-icon {
+    padding-top: 6px;
+  }
 }
 
-.post-title {
-  display: none;
+* {
+  box-sizing: border-box;
 }
 
 
@@ -32,6 +38,13 @@ ul,
   font-weight: 300;
 }
 
+h2 {
+  font-family: $base-font-family;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+
 .site-title {
   font-size: 34px;
   text-transform: uppercase;
@@ -42,6 +55,19 @@ ul,
 
   @include media-query($on-laptop) {
     font-size: 26px;
+  }
+}
+
+.m-section {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  display: block;
+  background: url("../images/sun.jpg") no-repeat right center;
+  padding: 100px;
+  h2 {
+    font-family: $secondary-font-family;
+    margin-bottom: 0;
   }
 }
 

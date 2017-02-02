@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i|Montserrat:400,700" rel="stylesheet">
 </head>
 
-  <body>
+  <body class="m-body">
 
     <header class="site-header" role="banner">
 
@@ -47,8 +47,11 @@
         </nav>
       </div>
   </header>
-  <main class="page-content" aria-label="Content">
+  <main class="page-content m-body" aria-label="Content">
     <div class="wrapper">
+      <div class="m-section">
+        <h2>{{ page.title }}</h2>
+      </div>
       {{ content }}
     </div>
   </main>
