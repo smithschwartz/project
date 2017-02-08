@@ -1,60 +1,144 @@
-.l-home {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @include tablet {
-    flex-direction: row;
-  }
-}
-
-.m-bg-image {
-  background: url("../images/sunset.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  @include tablet {
-    background: url("../images/smith-sunset.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-  }
-}
-
-.l-home--wrapper {
-  align-items: center;
-  display: flex;
-  height: 88vh;
-  justify-content: center;
+.m-card--hero {
   width: 100%;
+  background: url("../images/header_image.jpg") no-repeat top center;
+  position: relative;
+  padding: 20px;
+  height: 500px;
+}
 
-  @include tablet {
-    align-items: center;
+.m-card--hero-tile {
+  position: absolute;
+  width: 50%;
+  bottom: -130px;
+  background: $color-white;
+  padding: 20px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 20;
+  text-align: center;
+}
+
+.m-work--link {
+  color: $color-accent;
+  &:hover {
+
+    .m-work--image-container {
+      box-shadow: 10px -10px 0 $color-secondary;
+    }
   }
 }
 
-.m-home--body {
-  color: white;
-  font-size: 28px;
-  position: relative;
-  z-index: 2;
-  
+.m-body {
+  background: $color-white;
+}
+
+.m-home--container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-white;
+  margin-top: 200px;
+}
+
+.m-work--image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-height: 400px;
+}
+
+h2.m-work--card-title {
+  color: $color-black;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+
   @include tablet {
-    font-size: 30px;
-    text-align: left;
+    font-size: 20px;
   }
 
   @include desktop {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
-.spacer {
+.m-work--card-date {
+  color: $color-primary;
+  font-family: $secondary-font-family;
+  font-size: 14px;
+  margin-bottom: 5px;
+
   @include tablet {
-    min-width: 52%;
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.m-work--card-dek {
+  color: $color-black;
+  font-family: $secondary-font-family;
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.m-body--bg {
+  background: $color-white;
+}
+
+
+.m-work--card {
+  align-content: center;
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+
+  @include tablet {
+    width: auto;
+    max-width: 50%;
+  }
+
+  @include desktop {
+    max-width: 25%;
+  }
+
+  &:nth-of-type(6n+2) {
+    @include desktop {
+      width: 50%;
+      max-width: 50%;
+
+      .m-work--image-container {
+        max-height: 600px;
+      }
+
+      .m-work--link {
+        &:hover {
+
+          .m-work--image-container {
+            box-shadow: 10px -10px 0 $color-primary;
+          }
+        }
+      }
+    }
   }
 }

@@ -17,7 +17,7 @@ $text-color:       #111;
 $background-color: transparent;
 $brand-color:      #E6341B;
 
-$grey-color:       #828282;
+$grey-color:       #EDEDE5;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -43,6 +43,17 @@ $color-hover-body: mix($brand-color, $text-color, 20%);
 $selection-color: rgba(176,214,253, 0.8);
 $site-grey: #ede9e6;
 
+// COLOR PALETTE
+// -------------
+
+$color-primary: #44756F;
+$color-accent: #CCDBBE;
+$color-secondary: #F5DC1E;
+$color-white: #fff;
+$color-black: #171812;
+
+$brand-color: $color-primary;
+$text-color: $color-black;
 
 // IMPORTS
 // -------
@@ -52,7 +63,6 @@ $site-grey: #ede9e6;
 @import "mixins";
 @import "nav";
 @import "home";
-@import "work";
 @import "gallery";
 @import "posts";
 

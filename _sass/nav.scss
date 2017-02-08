@@ -7,18 +7,21 @@
     display: flex;
     flex-direction: row;
     font-size: 16px;
+    padding-right: 20px;
   }
 
   @include desktop {
     font-size: 18px;
+    padding-right: 0;
   }
 }
 
 .m-nav--link {
+  color: $color-white;
   text-transform: uppercase;
 
   @include tablet {
-    padding-right: 15px;
+    padding-right: 20px;
 
     &:last-of-type {
       padding-right: 0;
@@ -26,11 +29,33 @@
   }
 }
 
-.site-header {
-  z-index: 20;
-  background: transparent;
+.site-title {
+  color: $color-white !important;
+  padding-left: 15px;
+
+  @include desktop {
+    padding-left: 0;
+  }
 }
 
-.site-nav .page-link {
-  font-family: $base-font-family;
+.site-header {
+  background: $color-black;
+  border-top: none;
+  border-bottom: none;
+  z-index: 20;
+}
+
+.site-nav {
+  top: 15px;
+  border: none;
+  background: $color-black;
+
+  .page-link {
+    color: $color-white;
+    font-family: $base-font-family;
+
+    @include tablet {
+      color: $color-white;
+    }
+  }
 }

@@ -60,7 +60,7 @@ h2 {
 
 .m-section {
   text-align: center;
-  color: white;
+  color: $color-white;
   margin-top: 20px;
   display: block;
   background: url("../images/sun.jpg") no-repeat right center;
@@ -86,5 +86,11 @@ $desktop-width: 900px;
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav .menu-icon > svg path {
+    fill: $color-white;
   }
 }

@@ -3,9 +3,25 @@ layout: default
 ---
 <div class="l-home"></div>
 
-<div class="l-home--wrapper">
-  <div class="spacer"></div>
-  <h1 class="m-home--body">Smith Schwartz is a designer, engineer, and artist with over a decade of professional experience</h1>
+<div class="m-card--hero">
+  <div class="m-card--hero-tile">
+    <h1 class="m-home--body">Smith Schwartz is a designer, engineer, and artist with over a decade of professional experience</h1>
+  </div>
 </div>
+
+  <div class="m-home--container">
+  {% for post in site.posts %}
+    <div class="m-work--card">
+      <a class="m-work--link" href="{{ post.url }}">
+        <div class="m-work--image-container">
+          <img class="m-work--card-image" src="{{ post.image_path }}" alt="{{ image.title}}"/>
+        </div>
+        <div class="m-work--card-date">{{ post.date | date_to_long_string }}</div>
+        <h2 class="m-work--card-title">{{ post.title }}</h2>
+        <div class="m-work--card-dek">{{ post.dek }}</div>
+      </a>
+    </div>
+  {% endfor %}
+  </div>
 
 
